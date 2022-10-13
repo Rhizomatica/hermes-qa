@@ -39,7 +39,7 @@ for i in *; do
 
   size=$(stat -c%s "${ENCODED_DIR}/${no_extension}.vvc")
 
-  echo "Size: ${size}<br /><img src=${input_file} /> <br /> <br />" >> ${output}
+  echo "Name: ${no_extension}<br /> Size: ${size}<br /><img src=${input_file} /> <br /> <br />" >> ${output}
 
 done
 
