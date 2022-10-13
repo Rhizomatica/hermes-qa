@@ -1,21 +1,25 @@
 #!/bin/sh
 
-CODECS=vvc
+# put all the code inside a for() to iterate among many codecs...
+CODEC=vvc
 
-SOURCE_DIR=../data-set/image
-ENCODED_DIR=../artifacts/encoded-vvc
-RECONSTRUCTED_DIR=../artifacts/reconstructed-vvc
+# we need absolute paths in this script!!!
+BASE_PATH=$(pwd)
+
+SOURCE_DIR=${BASE_PATH}/../data-set/image
+ENCODED_DIR=${BASE_PATH}/../artifacts/encoded-vvc
+RECONSTRUCTED_DIR=${BASE_PATH}/../artifacts/reconstructed-vvc
 
 COMPRESS_IMAGE=compress_image.sh
 DECOMPRESS_IMAGE=decompress_image.sh
-
-cd ${SOURCE_DIR}
 
 mkdir -p ${ENCODED_DIR}/
 mkdir -p ${RECONSTRUCTED_DIR}/
 
 rm -f ${ENCODED_DIR}/*
 rm -f ${RECONSTRUCTED_DIR}/*
+
+cd ${SOURCE_DIR}
 
 # compress data
 for i in *; do
