@@ -1,0 +1,90 @@
+From rafael2kdrm@gmail.com  Thu Dec  1 06:07:08 2022
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 7E36C8AA0C; Thu,  1 Dec 2022 06:07:08 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NN8zG2pLGz4wQ7
+	for <root@estacao1.hermes.radio>; Thu,  1 Dec 2022 08:55:06 +0000 (UTC)
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass
+	reason="pass (just generated, assumed good)"
+	header.d=mail.hermes.radio
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=
+	mail.hermes.radio; h=content-type:to:subject:message-id:date
+	:from:mime-version; s=dkim; t=1669884905; x=1672476906; bh=Nk/cT
+	Kc9WLQ/oJc7e996nWpQVPKwuBDPdOMC66vd8IQ=; b=Ojs7rIixiFCl1F3VUp3Ov
+	ZaKKm+yVunDlpVeubWiG9y+KMJ5wBV1ao/ie0SUJMU+ZhkQ3a1LBQE9RErkfb7EE
+	GmysobTB/e/x9IW7mkzKvMSPjg0VgvavRSS4DJoYPVQKFV/nJyNHv//glq8c4OzW
+	FGG0GjrWgjFI1WJjFXB3I6pSigi+Blm8+LJXbycC6rx5oEGnL4zNO9HPx0jmZQwN
+	mTMpiIX4Kv4+H7P/lnuAXu0FRpQSRryV/HJ4nt2+uuaQHU9ZtfgqH8UOQC19jEow
+	MVZQT7aOSbXRWNJOmZwtMwmmUFWuxPQm3L4cZxJs62DdJpO3g7Sid9o2Tq5sPydz
+	w==
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass (2048-bit key)
+	header.d=gmail.com
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id STi_OSgFJUYA for <root@estacao1.hermes.radio>;
+	Thu,  1 Dec 2022 08:55:05 +0000 (UTC)
+Received: by hermes.radio (Postfix, from userid 10)
+	id 4NN8zF6Zk2z4wbh; Thu,  1 Dec 2022 08:55:05 +0000 (UTC)
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 53A1E8A8F2; Thu,  1 Dec 2022 05:32:20 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NN8QS6chzz4wbh
+	for <root@estacao1.hermes.radio>; Thu,  1 Dec 2022 08:30:08 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id DIAcaJH1ynBS for <root@estacao1.hermes.radio>;
+	Thu,  1 Dec 2022 08:30:08 +0000 (UTC)
+Received: from mail-pj1-f50.google.com (mail-pj1-f50.google.com [209.85.216.50])
+	by hermes.radio (Postfix) with ESMTPS id 4NN8QS3Slwz4wQ7
+	for <root@estacao1.hermes.radio>; Thu,  1 Dec 2022 08:30:08 +0000 (UTC)
+Received: by mail-pj1-f50.google.com with SMTP id k2-20020a17090a4c8200b002187cce2f92so4524775pjh.2
+        for <root@estacao1.hermes.radio>; Thu, 01 Dec 2022 00:30:08 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Nk/cTKc9WLQ/oJc7e996nWpQVPKwuBDPdOMC66vd8IQ=;
+        b=OQT40k5aSbTp8YrJNQljh9lKixgc35baYS6b003a7Q4Fknzud9gfjGNbGGtRM91ZnE
+         Om29d0huzZZEe/wQoOX6DyBqtNihpvNS/4SM/EKdUEKahdQvL9KvMpGDysm59PiUsEGr
+         GPGBe5CJ4R8pemsxWd7EUNCDx8dFKZpFpaaGg8Jgji9iGFKwzfvjLkHy2N/beAClsYlC
+         riYYU6R9jTqZH+ORxBqFMndR4kG8jZmOUvV1rVrZPh1IEcQ6TAJecsaBvhVY8Q5lSY4J
+         +AlnjcE4ThRp7Yx5EYPXAnRV8hEdY8B2UVD22/0osJCG6xbKbDCu8gh+bhD1bkipU0St
+         F9qg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Nk/cTKc9WLQ/oJc7e996nWpQVPKwuBDPdOMC66vd8IQ=;
+        b=lwiguqu5tKLAcXLXHfhwg2nOzsL9KonfxcuOwcvrygcyx4WrMlQ3J1a41pAeWxWvOo
+         j8msBU594t8QLENK7HcTj5hgPleuL6ZP1351NwyGzcQdnEV4HVbP+Q+YDIOBPZWazWhq
+         BurhVHfCSRh4ZrvVE2vQCKndQfq/4j0SSbKHpN8w4GSFg6JyP2Fe+GoYteTJQJWVn5nS
+         5lOCoucRiZxwQWVat35kAlxm3RLRxspRdnKIAqrNc1Sy6XXCJQ4TfghoTWKhhIVJWn/c
+         NEPC9CEoE1vXUADxox/ZNrFVFL2Ek3dpLO0HnvJCuL/UWXMXeg8Oj/0eSMDjcfvYYBdi
+         gG7A==
+X-Gm-Message-State: ANoB5plITOKr1E9mhzhOrmNJR69ZbDkn94p5ixK7WQ3jK1Fkpc2KTZkS
+	MVeBsD7Y2XqeO7h0a7HDd5sMqPnC0KS9y5OFz+CNFbnNu1NG6g==
+X-Google-Smtp-Source: AA0mqf56uw00hjhKUg3xktaKNAV7IWxk/7RH58KK9jDAKB7fKR0Bj6UmVAKiDX/EJrXLMge/yBmE64xZDrOL+m68r0M=
+X-Received: by 2002:a17:90a:5787:b0:218:8398:5846 with SMTP id
+ g7-20020a17090a578700b0021883985846mr66154109pji.241.1669883401361; Thu, 01
+ Dec 2022 00:30:01 -0800 (PST)
+MIME-Version: 1.0
+From: Rafael Diniz <rafael2kdrm@gmail.com>
+Date: Thu, 1 Dec 2022 11:29:50 +0300
+Message-ID: <CAAB8m4Ooy6CDubYtVRFEuUT6bOqrPs2DNp9C5jDkOQWSF9i6fg@mail.gmail.com>
+Subject: teste
+To: root@estacao1.hermes.radio
+Content-Type: multipart/alternative; boundary="000000000000f45f8405eec006ff"
+
+--000000000000f45f8405eec006ff
+Content-Type: text/plain; charset="UTF-8"
+
+teste1
+
+--000000000000f45f8405eec006ff
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">teste1<br></div>
+
+--000000000000f45f8405eec006ff--

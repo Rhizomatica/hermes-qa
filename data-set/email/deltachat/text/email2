@@ -1,0 +1,38 @@
+From chgp@pu4gnu.hermes.radio  Mon Jul 19 17:52:22 2021
+Received: from localhost (localhost [127.0.0.1])
+	by pu4gnuhost.hermes.radio (Postfix) with UTF8SMTP id AEC408C04FD
+	for <chgp@hermes.radio>; Mon, 19 Jul 2021 17:52:22 -0300 (-03)
+Received: from pu4gnuhost.hermes.radio ([127.0.0.1])
+	by localhost (pu4gnuhost.hermes.radio [127.0.0.1]) (amavisd-new, port 10024)
+	with UTF8LMTP id DkFS9wUtXSAD for <chgp@hermes.radio>;
+	Mon, 19 Jul 2021 17:52:22 -0300 (-03)
+Received: from [127.0.0.1] (unknown [192.168.0.28])
+	(Authenticated sender: chgp@pu4gnu.hermes.radio)
+	by pu4gnuhost.hermes.radio (Postfix) with UTF8SMTPSA id 853BB8C02C8
+	for <chgp@hermes.radio>; Mon, 19 Jul 2021 17:52:22 -0300 (-03)
+Content-Type: text/plain; charset=utf-8; format=flowed; delsp=no
+Chat-Disposition-Notification-To: chgp@pu4gnu.hermes.radio
+Subject: =?utf-8?q?Re=3A_Message_from_chgp=40pu4gnu=2Ehermes=2Eradio?=
+MIME-Version: 1.0
+References: <Mr.GTgND73IwOK.2UwrO569IES@pu4gnu.hermes.radio>
+	<Mr.Xt4uP_NIWrM.2n6WFwWy9Ch@pu4gnu.hermes.radio>
+In-Reply-To: <Mr.Xt4uP_NIWrM.2n6WFwWy9Ch@pu4gnu.hermes.radio>
+Date: Mon, 19 Jul 2021 20:52:21 +0000
+Chat-Version: 1.0
+Autocrypt: addr=chgp@pu4gnu.hermes.radio; prefer-encrypt=mutual;
+	keydata=xjMEYPXg2RYJKwYBBAHaRw8BAQdAxWaduogITE79miME/Y1UWmm8mplTV6y0FmXsRD9h66
+	vNGjxjaGdwQHB1NGdudS5oZXJtZXMucmFkaW8+wosEEBYIADMCGQEFAmD14NkCGwMECwkIBwYVCAkK
+	CwIDFgIBFiEEiiIwz9A/5gvGladX771z4VihIboACgkQ771z4VihIbrrvgEAz+WXZk8UWlX4N+tBPx
+	qa8JfgF6CEOCme/v+rkBna0WAA/RJN7CfJ1sq/gFXXrTRx7oBaGNv2h4a2hMo8Yk8q+1AIzjgEYPXg
+	2RIKKwYBBAGXVQEFAQEHQO3p/MTwzAeRcgTbNJGQVEXhEAOOKNt6xGcRZ+8+d6VhAwEIB8J4BBgWCA
+	AgBQJg9eDZAhsMFiEEiiIwz9A/5gvGladX771z4VihIboACgkQ771z4VihIbreLgEAkiF/FcYF2QvM
+	UYq7c6bNImPT7Gait2wc0pCQdFViIS4A/0fJ6Zf20Q6kkeUIFbY+xm6vKIwmmpR6/NtzoQ8Sb40B
+Message-ID: <Mr.KVcLPCRGY1O.IPvQB9cBTH6@pu4gnu.hermes.radio>
+To: Carlos Paulino <chgp@hermes.radio>
+From: <chgp@pu4gnu.hermes.radio>
+
+Mensagem de teste de texto
+
+-- 
+Enviado pelo meu Delta Chat Messenger: https://delta.chat
+

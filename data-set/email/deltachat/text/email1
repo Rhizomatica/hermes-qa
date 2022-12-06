@@ -1,0 +1,47 @@
+From rafael2k@hermes.radio  Thu Jul 14 09:19:01 2022
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4Lk87T0J5Jz4xqP
+	for <root@ka1.hermes.radio>; Thu, 14 Jul 2022 09:19:01 +0000 (UTC)
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass
+	reason="pass (just generated, assumed good)"
+	header.d=mail.hermes.radio
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=
+	mail.hermes.radio; h=from:to:message-id:date:in-reply-to
+	:references:mime-version:subject:content-type; s=dkim; t=
+	1657790340; x=1660382341; bh=Swv2Z1b0fPrzk57chpmNpnYWAltwiMtrHT8
+	ZBVoTB3g=; b=mAY+jsyyInAGQBXWKv9TQY1VHU4+vahF/lJrVJgYicq0nnL/+Kb
+	uN4ffDly0kAdRMIkOQM/1Ojp23zdvO85M2mc3BlMSRGt4tfJbAUQi+IGpyNC44tz
+	e1cHOPsQEf9ckw07WfKHm2esTNn1IEtqB6FCbntOOZQ0xM5EcR26lY9Y3Lj+vrhe
+	ACMuUpjazWuvaqznD4PokGRaT2srIukrVhMSyD6jVUJ//29xyI4cUG5RqsQBua1Y
+	AH6uWsPFNj58B4jQ2fYJwIDHidZN1dpLTdMmvUYimukUHED7mcqMpaE1mpVOW3KH
+	mr00MPB7gRoulrN8ejuvNKtcqepJklppFqQ==
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id FSXoLb8BTeTB for <root@ka1.hermes.radio>;
+	Thu, 14 Jul 2022 09:19:00 +0000 (UTC)
+Received: from [127.0.0.1] (unknown [81.9.16.204])
+	by hermes.radio (Postfix) with UTF8SMTPSA id 4Lk87S2DhSz4x7h
+	for <root@ka1.hermes.radio>; Thu, 14 Jul 2022 09:19:00 +0000 (UTC)
+Content-Type: text/plain; charset=utf-8; format=flowed; delsp=no
+Subject: =?utf-8?q?Mensagem_de_rafael2k=40hermes=2Eradio?=
+MIME-Version: 1.0
+References: <Mr.yFiPBDFZVhc.R8+up07n1mN@hermes.radio>
+	<Mr.UsPb9yBb/z+.vh9AoYVR/Lg@hermes.radio>
+In-Reply-To: <Mr.UsPb9yBb/z+.vh9AoYVR/Lg@hermes.radio>
+Date: Thu, 14 Jul 2022 09:18:54 +0000
+Chat-Version: 1.0
+Autocrypt: addr=rafael2k@hermes.radio;
+	keydata=xjMEYo88ZhYJKwYBBAHaRw8BAQdAHYlXKfvdZhBmkMBMaNOmP5y8Pyxm6pLX5wgvBR6f6X
+	DNFzxyYWZhZWwya0BoZXJtZXMucmFkaW8+wosEEBYIADMCGQEFAmKPPGYCGwMECwkIBwYVCAkKCwID
+	FgIBFiEE/Kt4b7PgnzndsbilRwI5P+lR3QMACgkQRwI5P+lR3QOm1QD/cwpNHAam5MmZrdj8AQyYm2
+	JqqLNTqh4HAZ5dLBIJggkA/3wjlvBdT2gIHuTB8jQ//orIi4YjdCK+cJFeI0/ZrfcDzjgEYo88ZhIK
+	KwYBBAGXVQEFAQEHQJ3yBjJFMMjTewFi0fWoHmyByQe32Yjx3La5VAxdcghwAwEIB8J4BBgWCAAgBQ
+	JijzxmAhsMFiEE/Kt4b7PgnzndsbilRwI5P+lR3QMACgkQRwI5P+lR3QNwJQD9ElCjLbjj+V5H+Y12
+	nkr2C3fa2HvfTCyzKl9hkCVENTEBAPB5gIG8ivQ/rbrweIVFB3qlRHaJY5ma1Z1gdrV1qoUM
+Message-ID: <Mr.wkC3ybedgh8.jx1paRWjT9q@hermes.radio>
+To: <root@ka1.hermes.radio>
+From: <rafael2k@hermes.radio>
+
+maaais uma debugada!
+
