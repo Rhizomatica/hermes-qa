@@ -1,0 +1,78 @@
+From rafael@rhizomatica.org  Tue Dec  6 13:01:35 2022
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 21625A662D; Tue,  6 Dec 2022 13:01:35 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NRQ2n6qMQz4wbt
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 15:54:25 +0000 (UTC)
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass
+	reason="pass (just generated, assumed good)"
+	header.d=mail.hermes.radio
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=
+	mail.hermes.radio; h=content-transfer-encoding:content-type
+	:subject:from:to:content-language:user-agent:mime-version:date
+	:message-id; s=dkim; t=1670342065; x=1672934066; bh=DzpLpvOikelh
+	hEWXdTQjbGk3SWU9Sryo6TQmwgUaL9s=; b=JNB1M55UkJDXi1twwtGLrEvWPKjI
+	CzlQt461PBybrcVM29ma5Af1QulmQATm7JIvfgdqMykK4B83GT1S0rNGXOHqlZMp
+	ago5r9Wmr9sRnlBE4F1yqoW5xqrnVXFpaBDusOQ7PfN70g+CDU8MCY0VFCYRZLPf
+	UJOKbUVrQAjAV7OKRM6xI6LtSwUKRo4FuR8M4ZF54//+Ul/BIInOZ2P39KLIzkwh
+	2JQMAKkkErrvYHTcFxtxMfX2ULvEh6GfJYbO+2vYiYRactF+D2XfifX/8gh8whP9
+	sp9yQ9WJhJlKfRsNB7XUanlDPY0ZhJdJemcV9+pOMM1nhUQuK/7tqdEOHg==
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass (1024-bit key)
+	header.d=rhizomatica.org
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id xdTwZ27NXhwl for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 15:54:25 +0000 (UTC)
+Received: by hermes.radio (Postfix, from userid 10)
+	id 4NRQ2l6g9Fz4wby; Tue,  6 Dec 2022 15:54:23 +0000 (UTC)
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 16760A654F; Tue,  6 Dec 2022 12:50:16 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NRPhs0Hb5z4wbt
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 15:38:53 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id hNRG5Ri2NJxc for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 15:38:49 +0000 (UTC)
+Received: from arroqueno.vm.rhizomatica.org (mail.rhizomatica.org [66.228.136.53])
+	by hermes.radio (Postfix) with ESMTPS id 4NRPhn3zzKz4wQ7
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 15:38:49 +0000 (UTC)
+Received: from arroqueno.vm.rhizomatica.org (localhost [127.0.0.1])
+	by arroqueno.vm.rhizomatica.org (Postfix) with ESMTP id 4NRPhf4DjBz17NZ
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 09:38:42 -0600 (CST)
+Authentication-Results: arroqueno.vm.rhizomatica.org (amavisd-new);
+	dkim=pass (1024-bit key) reason="pass (just generated, assumed good)"
+	header.d=rhizomatica.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=rhizomatica.org;
+	 h=content-transfer-encoding:content-type:content-type:subject
+	:subject:from:from:to:content-language:user-agent:mime-version
+	:date:date:message-id; s=dkim; t=1670341122; x=1672933123; bh=Dz
+	pLpvOikelhhEWXdTQjbGk3SWU9Sryo6TQmwgUaL9s=; b=XQrb9U8hHK3q38QyMZ
+	woUypG5dpKZ3ZdriKSvo+wdEUZ3NhWTGZB6B/Kwz+hOSe1/2eSeTC2D0DrB03VgH
+	nTPsojvUzOdqB48iAiN/EVJn3g1l5KYwObItz5iUFYN2hirID5atU1Wpoy98Rc2s
+	YEQVCMRTlm/pK5/EOvCkLljNM=
+X-Virus-Scanned: Debian amavisd-new at m2.vm.rhizomatica.org
+Received: from arroqueno.vm.rhizomatica.org ([127.0.0.1])
+	by arroqueno.vm.rhizomatica.org (arroqueno.vm.rhizomatica.org [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id GJ3TnHA2bBAJ for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 09:38:42 -0600 (CST)
+Received: from [192.168.1.111] (unknown [81.200.11.119])
+	by arroqueno.vm.rhizomatica.org (Postfix) with ESMTPSA id 4NRPhd4tRsz1785
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 09:38:41 -0600 (CST)
+Message-ID: <5a134612-936e-a443-bf5a-aae5478ab460@rhizomatica.org>
+Date: Tue, 6 Dec 2022 18:38:39 +0300
+MIME-Version: 1.0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101
+ Thunderbird/102.5.0
+Content-Language: en-US
+To: root@estacao1.hermes.radio
+From: Rafael Diniz <rafael@rhizomatica.org>
+Subject: teste
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+teste 1 simpl=C3=A3o
+
+

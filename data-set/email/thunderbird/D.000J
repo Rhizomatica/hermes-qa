@@ -1,0 +1,89 @@
+From rafael@rhizomatica.org  Tue Dec  6 13:01:35 2022
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 3EB45A664C; Tue,  6 Dec 2022 13:01:35 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NRQ9V5zB7z4wbt
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 16:00:14 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass (1024-bit key)
+	header.d=rhizomatica.org
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 1GkXl2qAG9qw for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 16:00:14 +0000 (UTC)
+Received: from arroqueno.vm.rhizomatica.org (mail.rhizomatica.org [66.228.136.53])
+	by hermes.radio (Postfix) with ESMTPS id 4NRQ9V2Q1jz4wQ7
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 16:00:14 +0000 (UTC)
+Received: from arroqueno.vm.rhizomatica.org (localhost [127.0.0.1])
+	by arroqueno.vm.rhizomatica.org (Postfix) with ESMTP id 4NRQ9T5rhRz188D
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 10:00:13 -0600 (CST)
+Authentication-Results: arroqueno.vm.rhizomatica.org (amavisd-new);
+	dkim=pass (1024-bit key) reason="pass (just generated, assumed good)"
+	header.d=rhizomatica.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=rhizomatica.org;
+	 h=content-type:content-type:content-language:to:subject:subject
+	:from:from:user-agent:mime-version:date:date:message-id; s=dkim;
+	 t=1670342413; x=1672934414; bh=7ZG0Fbf+y1yHOhBzPkKvstoYCgL95Quv
+	P70/pXt/OBM=; b=IDgZllzvjD/a0MH621Ev2j7UXwuRKUk6JmdsaPLilRNlr4Oh
+	bg9wgtH+Daxo4Y0SCutM2W7oVxGhLL5TfW36VNnytuYw4MUZe9flZaQvJ13ptJ2U
+	sOcl9d3xe6CdWrURntY/+GvY3VoleitYZOGR9xs8prRaZQd0nAyQ2xFEnEQ=
+X-Virus-Scanned: Debian amavisd-new at m2.vm.rhizomatica.org
+Received: from arroqueno.vm.rhizomatica.org ([127.0.0.1])
+	by arroqueno.vm.rhizomatica.org (arroqueno.vm.rhizomatica.org [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id yKPGSNCV0XD5 for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 10:00:13 -0600 (CST)
+Received: from [192.168.1.111] (unknown [81.200.11.119])
+	by arroqueno.vm.rhizomatica.org (Postfix) with ESMTPSA id 4NRQ9T1qSjz174R
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 10:00:13 -0600 (CST)
+Message-ID: <2c1a574e-2b54-ec93-ff05-2840cd23d044@rhizomatica.org>
+Date: Tue, 6 Dec 2022 19:00:11 +0300
+MIME-Version: 1.0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101
+ Thunderbird/102.5.0
+From: Rafael Diniz <rafael@rhizomatica.org>
+Subject: teste 5
+To: root@estacao1.hermes.radio
+Content-Language: en-US
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="------------8w9Fbroh6eDeGSHzE8A8LV8V"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--------------8w9Fbroh6eDeGSHzE8A8LV8V
+Content-Type: multipart/mixed; boundary="------------iSyQHq9P9B0HnhZ8PDxAB6KP";
+ protected-headers="v1"
+From: Rafael Diniz <rafael@rhizomatica.org>
+To: root@estacao1.hermes.radio
+Message-ID: <2c1a574e-2b54-ec93-ff05-2840cd23d044@rhizomatica.org>
+Subject: teste 5
+
+--------------iSyQHq9P9B0HnhZ8PDxAB6KP
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: base64
+
+MiBpbWFnZW5zICsgc2lnbmVkDQoNCg0KDQo=
+
+--------------iSyQHq9P9B0HnhZ8PDxAB6KP--
+
+--------------8w9Fbroh6eDeGSHzE8A8LV8V
+Content-Type: application/pgp-signature; name="OpenPGP_signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="OpenPGP_signature"
+
+-----BEGIN PGP SIGNATURE-----
+
+wsF5BAABCAAjFiEEdzlhfUKpeKoYB73b387WqGweafEFAmOPZwsFAwAAAAAACgkQ387WqGweafHN
+Qw//Q/7J/YOIq4CVTLRld5ejtyvRs0zD8TJ8r/01xAnuSBLh+/wW2IGSNwTidXzmc2qkGc/hV14h
+qLH9Om7v7mx8G5FWO5jPuyygJvVV1RpswrNycIbbJaZg/lwNCz2b54pO7z2p9DGmpAkVdFkdUPlH
+4ns5b4Ym70Xm1n3q2SJM3n9caiaDsLoc+WSIREAZ2n7h1gVnnDl+uzJY/3W8LDDtovJbqFqlIqJ4
+iMmSvj4bTVmb6wnVSTetcRazk+l78w7o2fQGJC3TCGKl3EZX2NHJXT2mI1WJFhuGFZXJ8NsFHQMY
+cPuzbwYP+cY+co8rFcuU3OHK4/mpmYVnzW4pxyhkdAgItZllby51D30KqXt80ok4NVgg8BFbnT8j
+Tp3U9GG6wQ6+UzCucBDshXy4Girud0WI7m7843mmm0hnsx86s/Kgi+MTOS/cWOkOj6v1sr37FTMX
+LQu15MKpaCsIY1WlSEVvQKcHBqXaGNCnD23ggF9AtEou2bfyAXGzv7LOZQZzigrOI1TSOJzRVF8r
+SSjyw+B8ra1Ta0J+aM6ndLrRSq5FQ7qBZi0CLgKnFYagpezAX7bvf0IBW1OsU5bmSOwOF0afsrDB
+7RAjyibBGshI1z98AMCRgmacIqCkql+45nAqN3IWpbs1Pb+bUwjTGVWj6anutqxh0ZX8IgnmoQrE
+j0g=
+=vE7O
+-----END PGP SIGNATURE-----
+
+--------------8w9Fbroh6eDeGSHzE8A8LV8V--

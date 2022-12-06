@@ -1,0 +1,115 @@
+From rafael@rhizomatica.org  Tue Dec  6 13:01:35 2022
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 19B8AA6626; Tue,  6 Dec 2022 13:01:35 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NRQ2m6P0fz4wbt
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 15:54:24 +0000 (UTC)
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass
+	reason="pass (just generated, assumed good)"
+	header.d=mail.hermes.radio
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=
+	mail.hermes.radio; h=content-type:subject:from:to
+	:content-language:user-agent:mime-version:date:message-id; s=
+	dkim; t=1670342064; x=1672934065; bh=NltVv571hfeZPjp3oh9M+VT2RKO
+	ZPc6Xq1ZEGJJDAxY=; b=ssDsETGYe0zB8kcOzRyYQtylC7KyJ0Pj2tPlp2jxEpK
+	zOYdixk6FpyVFhzY1hvv1fCvU6nH6rd6UtVDKuN+GS4Yb1jg2qoCiekefYEbDETd
+	xbDCCT+EZpf9XLLk+QZqVT/aK69V+YgkZing3s9Y9PsX8vWpHjmyJzKif9yeFL7x
+	tEbYQaFkrrfiyuLiGDKPK8xvtUM1pAzyMVPcwv7PuJLNYFdkqkIr3uN8D8M+fnKn
+	2EVqD5rbiF0NH7YO47p98rkb+4Hfh6C7dUQ2QYTCJhZqws2R8S8nwhbQh/U+83uj
+	ipsV6d3ki2q2hhzVF8xpxw7yBDfXHjRqit0vaW743wA==
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Authentication-Results: hermes.radio (amavisd-new); dkim=pass (1024-bit key)
+	header.d=rhizomatica.org
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id uJ9wRiqHFIIR for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 15:54:24 +0000 (UTC)
+Received: by hermes.radio (Postfix, from userid 10)
+	id 4NRQ2l5gZrz4wbw; Tue,  6 Dec 2022 15:54:23 +0000 (UTC)
+Received: by estacao.hermes.radio (Postfix, from userid 10)
+	id 18D2BA6553; Tue,  6 Dec 2022 12:50:16 -0300 (-03)
+Received: from hermes.radio (localhost [127.0.0.1])
+	by hermes.radio (Postfix) with ESMTP id 4NRPj46Jrhz4wbt
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 15:39:04 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at hermes.radio
+Received: from hermes.radio ([127.0.0.1])
+	by hermes.radio (hermes.radio [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id mfu6z2P8z70o for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 15:39:04 +0000 (UTC)
+Received: from arroqueno.vm.rhizomatica.org (mail.rhizomatica.org [66.228.136.53])
+	by hermes.radio (Postfix) with ESMTPS id 4NRPj435KQz4wQ7
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 15:39:04 +0000 (UTC)
+Received: from arroqueno.vm.rhizomatica.org (localhost [127.0.0.1])
+	by arroqueno.vm.rhizomatica.org (Postfix) with ESMTP id 4NRPj36g9Vz188D
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 09:39:03 -0600 (CST)
+Authentication-Results: arroqueno.vm.rhizomatica.org (amavisd-new);
+	dkim=pass (1024-bit key) reason="pass (just generated, assumed good)"
+	header.d=rhizomatica.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=rhizomatica.org;
+	 h=content-type:content-type:subject:subject:from:from:to
+	:content-language:user-agent:mime-version:date:date:message-id;
+	 s=dkim; t=1670341143; x=1672933144; bh=NltVv571hfeZPjp3oh9M+VT2
+	RKOZPc6Xq1ZEGJJDAxY=; b=NmtyWa6MGr6BRTXJvsIlEd3P+GH8mjH/ybZOTKc3
+	1pZyVfTo+5p3bI5ETUqcxjPNiYjbyVXVG8cA3YPc3PWIrPrAsH98kp9Q7ExfQdTQ
+	uasH7V9BHPsQ8vjiyd+/DQsefQxNmcYGh4gQkXfq/RmGzqyogekchuv6vUTEmlyo
+	gFI=
+X-Virus-Scanned: Debian amavisd-new at m2.vm.rhizomatica.org
+Received: from arroqueno.vm.rhizomatica.org ([127.0.0.1])
+	by arroqueno.vm.rhizomatica.org (arroqueno.vm.rhizomatica.org [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 6fbNCZJxiQk9 for <root@estacao1.hermes.radio>;
+	Tue,  6 Dec 2022 09:39:03 -0600 (CST)
+Received: from [192.168.1.111] (unknown [81.200.11.119])
+	by arroqueno.vm.rhizomatica.org (Postfix) with ESMTPSA id 4NRPj32FpZz1785
+	for <root@estacao1.hermes.radio>; Tue,  6 Dec 2022 09:39:03 -0600 (CST)
+Message-ID: <309c6319-e94b-5c56-35a7-45c9a69e304a@rhizomatica.org>
+Date: Tue, 6 Dec 2022 18:39:01 +0300
+MIME-Version: 1.0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101
+ Thunderbird/102.5.0
+Content-Language: en-US
+To: root@estacao1.hermes.radio
+From: Rafael Diniz <rafael@rhizomatica.org>
+Subject: teste 2
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="------------DpWel4CU2YhXaIsm0wJT3z1u"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--------------DpWel4CU2YhXaIsm0wJT3z1u
+Content-Type: multipart/mixed; boundary="------------bB8GMkDcSZNkRkqqxkwMuqRA";
+ protected-headers="v1"
+From: Rafael Diniz <rafael@rhizomatica.org>
+To: root@estacao1.hermes.radio
+Message-ID: <309c6319-e94b-5c56-35a7-45c9a69e304a@rhizomatica.org>
+Subject: teste 2
+
+--------------bB8GMkDcSZNkRkqqxkwMuqRA
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: base64
+
+dGVzdGUgMiBjb20gYXNzaW5hdHVyYSBkaWdpdGFsDQoNCg0K
+
+--------------bB8GMkDcSZNkRkqqxkwMuqRA--
+
+--------------DpWel4CU2YhXaIsm0wJT3z1u
+Content-Type: application/pgp-signature; name="OpenPGP_signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="OpenPGP_signature"
+
+-----BEGIN PGP SIGNATURE-----
+
+wsF5BAABCAAjFiEEdzlhfUKpeKoYB73b387WqGweafEFAmOPYhUFAwAAAAAACgkQ387WqGweafG/
+kw/8DCNRofYxKgSuExJwwx/8z5i95auq7o6mX8ScQ672WZyZdNGAba74Q/fCzYaFyLvHwLvFn6VM
+d8zHeeHil4FBIheh7RTHHrd5FY2i8yUgffjxufnGAD2V4wmHgvOK/qLvJj6iN5JiBDjFhFCgfNF8
+sKvVkTeiDyXmUBmY+on4rvaAs0rsmT+qM0Cdgk9X4iOR8Xx/5o38YbCmijHEzTADe6ZnHkMQEBp6
+aX1y3hUQumExZpEEGHj73lPae106l8LTvVRmVGUXGcHXnEHUHshiHkb4NZNNa4XgR+FhDkB9mTbX
+N0i8FoMhSkHUNBWnTIkqedWIgr6qlXrU7VB2FzpsyRwDWtfdezrjdluG/738+PEykAJxh5k99TtA
+dBXruP+rtBp0Seg7Vm3PCd1nEljiSceJEkGADkx0tRaP/zGodllvVq0h1Jfvfv0grQFf463sMsUr
+61YJJLoBy1/EVpcq156YvBtiWh8FmMsU33txugdBCd6XgpmMWPRRaavopBs6Kt/6ZItjADWLSjXn
+Qee2Xlp4NTWqzv40g+5VWCNn0X+dukPuYzKJd/zaswm1ETOJt7CMR/9eyFPeF6OHKCcdhdkllczI
+KYGazrTk43MTDKxbT7f+KmEEjkVafaNRpv3dfW8oiSTs/z6QRJ7V/EYMtxUPpVUm66zu+BCnqtMM
+VL0=
+=VuUv
+-----END PGP SIGNATURE-----
+
+--------------DpWel4CU2YhXaIsm0wJT3z1u--
